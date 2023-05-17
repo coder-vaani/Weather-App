@@ -2,7 +2,7 @@ const apikey = "b8292b7519e9925f611faab6b9aba493";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const search = document.querySelector(".search input");
-const form = document.querySelector(".form");
+const searchButton = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather(city) {
@@ -40,7 +40,6 @@ async function checkWeather(city) {
 }
 
 //getting the city name from the search box
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+searchButton.addEventListener("click", () => {
     checkWeather(search.value);
 })

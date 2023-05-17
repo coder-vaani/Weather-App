@@ -27,12 +27,17 @@ header {
     text-align: center;
 }
 
+.search-bar {
+    border-radius: 30px;
+    display: flex;
+    background: white;
+}
 
 .search input {
-    width: 100%;
+    width: 90%;
     border: none;
     outline: none;
-    background: white;
+    background: transparent;
     color: #555;
     padding: 10px 25px;
     height: 60px;
@@ -40,6 +45,13 @@ header {
     font-size: 18px;
 }
 
+.search-bar button {
+    background: transparent;
+    color: #555;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
 
 .weather-icon {
     width: 170px;
