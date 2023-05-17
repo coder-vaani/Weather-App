@@ -13,7 +13,7 @@ header {
     text-align: center;
     background-image: linear-gradient(to right, #2F80ED, #56CCF2);
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 .container {
@@ -23,7 +23,7 @@ header {
     color: white;
     margin: 100px auto;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 80px 40px;
     text-align: center;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 .col img {
-    width: 40px;
+    width: 30%;
     margin-right: 10px;
 }
 
@@ -113,4 +113,18 @@ footer {
     padding: 10px 0;
     background-image: linear-gradient(to right, #2F80ED, #56CCF2);
     color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+
+    .col {
+        margin: 10% 0;
+    }
 }
